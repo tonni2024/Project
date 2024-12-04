@@ -48,4 +48,9 @@ def game():
     elif guess != answer:
       print("Guess again.")
 
-game()
+while True:
+    game()
+    play_again = input("Do you want to play again? Type 'yes' or 'no': ").lower()
+    if play_again != 'yes':
+        print("Thanks for playing!")
+        break
