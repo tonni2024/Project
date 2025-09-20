@@ -1,4 +1,3 @@
-#Ceasar cipher
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
             'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p',
             'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
@@ -25,8 +24,6 @@ while not should_end:
     text = input("Type your message:\n").lower()
     shift = int(input("Type the shift number:\n"))
 
-    # Add some code so that the program continues to work even if the user enters a shift number greater than 26.
-
     shift = shift % 26
 
     caesar(start_text=text, shift_amount=shift, cipher_direction=direction)
@@ -35,3 +32,4 @@ while not should_end:
     if restart == "no":
         should_end = True
         print("Goodbye")
+
